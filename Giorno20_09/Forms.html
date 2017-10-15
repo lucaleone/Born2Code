@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		input, select {
+			display: block;
+			margin: auto;
+			background: rgba(0, 0, 0, 0.3);
+			border-radius: 15px;
+			border-color: rgba(255, 255, 255, 0.6);			
+			min-height: 20px;
+			color: white;
+			text-align: center;
+			border-width: 2px;
+		}
+	</style>
+</head>
+<body style="background-image:url(gradient.jpg); background-repeat:no-repeat; background-size:100% auto">
+	<form style="width:80%; max-width:600px; margin:0 auto 0 auto; background-color:rgba(0, 0, 0, 0.2); color:white; text-align:center;" autocomplete="on">
+
+		<br />
+		<hr />
+		<label>Nome:</label>
+		<input type="text" name="userName" placeholder="inserisci il tuo nome" required />
+		<label>Cognome:</label>
+		<input type="text" name="userName" placeholder="inserisci il tuo cognome" required />
+		<label>Sesso:</label>
+		<input type="radio" name="userSex" value="male" required style="display:inline"/>Male
+		<input type="radio" name="userSex" value="female" required style="display:inline"/>Female
+		<br />
+		<label>Data di nascita:</label>
+		<input type="date" name="userDate" required />
+		<label>Telefono:</label>
+		<input type="tel" name="userTel" required />
+		<label>Città di nascita:</label>
+		<select name="userBornCity">
+			<option>Roma</option>
+			<option>Milano</option>
+			<option>Torino</option>
+			<option>Napoli</option>
+		</select>
+		<label>Email:</label>
+		<input type="email" name="useremail" required />
+		<label>Colore preferito:</label>
+		<input type="color" name="userFavColor"/>
+		<label>Foto profilo:</label>
+		<input type="file" name="userPicture" />
+		<label>Sito web personale:</label>
+		<input type="url" name="userSite"/>
+		<label>Quanto mi sto facendo gli affari tuoi:</label>
+		<p></p>0<input type="range" name="userMood" min="0" max="10" style="display:inline"/>255</p>
+		<input type="button" value="invia!" style="display:inline; min-width:20%; background-color:cornflowerblue"/>
+		<input type="reset" value="cancella" style="display:inline; min-width:10%; background-color:brown"/>
+		<hr />
+		<br />
+
+	</form>
+</body>
+</html>
