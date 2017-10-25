@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="libs/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <ol id="lista"></ol>
+
+    <div id="newBookmark">
+        <form name="newBookmarkForm" action="" method="POST">
+            <input type="url" id="url" name="url" placeholder="URL"><br>
+            <input type="text" id="label" name="label" placeholder="Label"><br>
+            <input type="text" id="type" name="type" placeholder="Tipo"><br>
+            <button type="button" id="salva_btn">Salva</button>
+        </form>
+    </div>
+
+    <script>
+        var bookmarks = {
+            link1: {
+                url: "www.google.it",
+                label: "Google",
+                type: "Search Engine"
+            },
+            links:[],
+            init: function () {
+                bookmarks.links=[bookmarks.link1];
+                bookmarks.eventHandlers();
+                bookmarks.writeList();
+            },
+            eventHandlers:function(){
+                $("#salva_btn").click(bookmarks.addNewBookmark);
+                
+            },
+            addNewBookmark:function(){
+                var newLink={
+                    url:$("#url").val(),
+                    label:$("#label").val(),
+                    type:$("#type").val()
+                }
+                bookmarks.links.push(newLink);
+                console.log(bookmarks.links);
+                bookmarks.writeList();
+                bookmarks.cleanFields();
+            },
+            cleanFields:function(){
+                $("#url").val("");
+                $("#label").val("");
+                $("#type").val("");
+            },
+            writeList: function () {
+                var strLI="";
+                for(i=0; i<bookmarks.links.length; i++){
+                    strLI+="<li><a href=''>"+bookmarks.links[i].label+"</a></li>";
+                }
+                $("#lista").html(strLI);
+            }
+        }
+
+        $(document).ready(bookmarks.init);
+    </script>
+</body>
+
+</html>

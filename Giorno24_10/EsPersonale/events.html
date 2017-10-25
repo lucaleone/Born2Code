@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event</title>
+    <script src="libs/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="eventsCSS.css">
+</head>
+<body>
+    <header>
+        <h1 class="textCentered">Event planner</h1>
+    </header>
+    <main class="flexContainer">
+        <div class="col1 layoutPadding">
+            <h2>Crea Evento</h2>
+            <form>
+                <label>ID evento:</label>
+                <input type="number" id="eventId">
+                <label>Titolo evento:</label>
+                <input type="text" id="eventTitle">
+                <label>Titolo evento:</label>
+                <input type="date" id="eventDate">
+                <label>Id owner:</label>
+                <input type="number" id="eventOwner">
+                <input type="button" id="saveEvent" value="Salva evento">
+            </form>
+            <br>
+            <h2>Crea Utente</h2>
+            <form>              
+                <label>ID utente:</label>
+                <input type="number" id="userId">
+                <label>Nome utente:</label>
+                <input type="text" id="userName">
+                <label>Email utente:</label>
+                <input type="text" id="userEmail">
+                <label>Tipo di utente:</label>
+                <select id="userType">
+                    <option value="user">normal user</option>
+                    <option value="super-user">super user</option>
+                    <option value="customer">customer</option>
+                </select>
+                <input type="button" id="saveUser" value="Salva utente">
+            </form>
+        </div>
+        <div class="col2 layoutPadding">
+            <h2 class="textCentered">Lista utenti</h2>
+            <ul id="listUser"></ul>
+        </div>
+        <div class="col2 layoutPadding">
+            <h2 class="textCentered">Lista eventi</h2>
+            <ul id="listEventi"></ul>
+        </div>
+    </main>    
+<script src="event.js"></script>
+</body>
+</html>

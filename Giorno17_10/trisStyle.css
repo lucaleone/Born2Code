@@ -1,0 +1,84 @@
+/*<meta name="viewport" content="width=device-width, initial-scale=1">*/
+img, embed, object, video{
+    max-width: 100%;
+}
+nav a, button {
+    min-width: 48px;
+    min-height: 48px;
+}
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    margin:0;
+}
+header{
+    padding: 1.2rem;
+    padding-bottom: 2.5rem;
+	width: 100%;
+    background-color: #4477b2 ;
+    color: white;
+}
+footer {
+	position: absolute;
+    bottom: 0px;
+    padding: 0.7rem;
+	width: 100%;
+	z-index: -1;
+	background-color:  #ededed;
+    text-align: center;
+    font-size: 0.6rem;	
+    font-weight: bold;
+}
+.trisTable{
+      margin: 3rem auto auto auto;
+      display: flex;
+      flex-wrap: wrap;
+      width: 500px;
+      height: 500px;
+}
+  .trisTable div{
+      border: 3px lightgray solid;
+      width: 33.33%;
+      height: 33.33%;
+  }
+  .trisTable div:hover{
+    background-color: rgba(230, 230, 230, 0.5);
+}
+
+#trisCaptation{
+    padding: 0.6rem;
+    text-align: center;
+    font-size: 1.2rem;	
+    font-weight: bold;
+}
+
+
+
+@media only screen and (min-width: 651px) {
+    header {
+        padding: 0.5rem;
+        padding-left: 1.2rem;
+    }
+}
+@media only screen and (max-width: 650px) {
+	.trisTable {
+		width: 400px;
+        height: 400px;
+	}
+}
+@media only screen and (max-width: 450px) {
+	.trisTable {
+		width: 300px;
+        height: 300px;
+	}
+}
+
+

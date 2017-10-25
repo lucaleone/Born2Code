@@ -1,0 +1,29 @@
+body{
+    width: 100%;
+    margin: 0;
+    font-size: 12px;
+}
+p{
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+.box{
+    border: 2px solid darkgray;
+    overflow: hidden;
+    width: 75%;
+    margin: 3em auto 0 auto;
+}
+.box > div{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+}
+.NumIndicator{
+    font-size: 4.6rem;
+}
+.NumLabel{
+    font-size: 1.5rem;
+}
+.NumImg{
+    height: 1.5rem;
+}

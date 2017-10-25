@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="libs/jquery.min.js"></script>
+</head>
+<body>
+    <ol id="lista"></ol>
+
+    <script>    
+     var elenco = ["luca","marco","pino","tizio","caio",];     
+     var updateList = function(){
+        $("#lista").empty();
+        var str="";
+        for(i=0; i < elenco.length; i++) {
+            str += "<li>" + elenco[i] + " <button class='delete_btn' data-id='"+ i +"'>Elimina</button></li>";
+        }
+        $("#lista").html(str);
+     }
+     var eraseli = function(){
+         var id = $(this).data("id");
+         alert("Cliccato"+ id);
+         elenco.splice(id, 1);
+         console.log(elenco);    
+         updateList();    
+     };
+     updateList();
+     $("#lista").on("click", ".delete_btn", eraseli);
+     
+    </script>
+</body>
+</html>
