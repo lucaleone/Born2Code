@@ -1,0 +1,33 @@
+{
+"Users": 
+[
+    {
+        "nome":"nome1",
+        "cognome":"cognome1",
+        "skills": ["s1", "s2", "s2"],
+        "foto": "res/f1.png",
+        "eta": 18
+    },
+    {
+        "nome":"nome2",
+        "cognome":"cognome2",
+        "skills": ["s12s", "s232", "s24"],
+        "foto": "res/f2.png",
+        "eta": 25
+    },
+    {
+        "nome":"nome3",
+        "cognome":"cognome3",
+        "skills": ["s1", "s572", "s622", "s84", "s11"],
+        "foto": "res/f3.png",
+        "eta": 84
+    },
+    {
+        "nome":"nome4",
+        "cognome":"cognome4",
+        "skills": ["s10", "s82"],
+        "foto": "res/f4.png",
+        "eta": 36
+    }
+]
+}

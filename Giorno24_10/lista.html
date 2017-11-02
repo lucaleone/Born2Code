@@ -14,7 +14,6 @@
     <script>    
      var elenco = ["luca","marco","pino","tizio","caio",];     
      var updateList = function(){
-        $("#lista").empty();
         var str="";
         for(i=0; i < elenco.length; i++) {
             str += "<li>" + elenco[i] + " <button class='delete_btn' data-id='"+ i +"'>Elimina</button></li>";

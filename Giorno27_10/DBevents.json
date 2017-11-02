@@ -1,0 +1,19 @@
+{ 
+    "events": [
+        {
+        "title":"Samsung Galaxy S9 potrebbe non avere il sensore biometrico sotto lo schermo",
+        "img":"res/ev1.jpg",
+        "descrizione": "Considerati i rumors accorsi su Samsung Galaxy S8 pronti a scommettere in un posizionamento del sensore biometrico sotto schermo, le dichiarazioni passate di Qualcomm secondo cui vedremo soluzioni simili nei primi mesi del 2018, in molti speravano che Samsung con Galaxy S9 tornasse sulla decisione di allocare il sensore sul retro per piazzarlo, finalmente e definitivamente, sotto il display."
+        },
+        {
+            "title":"Google Home non si ferma e al momento integra più di 65 app e servizi partner",
+            "img": "res/ev2.png",
+            "descrizione": "Considerati i rumors accorsi su Samsung Galaxy S8 pronti a scommettere in un posizionamento del sensore biometrico sotto schermo, le dichiarazioni passate di Qualcomm secondo cui vedremo soluzioni simili nei primi mesi del 2018, in molti speravano che Samsung con Galaxy S9 tornasse sulla decisione di allocare il sensore sul retro per piazzarlo, finalmente e definitivamente, sotto il display."
+        },
+        {
+            "title":"Arriva Halloween e WhatsApp Beta introduce nuove emoji per tutti",
+            "img": "res/ev3.jpg",
+            "descrizione": "Sarà una coincidenza ma, con l’approssimarsi di Halloween, WhatsApp Beta si aggiorna alla versione 2.17.397, introducendo parecchie nuove emoji, alcune delle quali sembrano realizzate apposta per questi giorni."
+        }
+    ]
+ }
