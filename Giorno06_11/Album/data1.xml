@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalogo>
+    <Album Titolo="cosa" Artista="coso" Anno="2016" Genere="Rock"></Album>
+    <Album Titolo="cosa1" Artista="coso1" Anno="2007" Genere="Rock"></Album>
+    <Album Titolo="cosa2" Artista="coso2" Anno="2048" Genere="Rock"></Album>
+    <Album Titolo="cosa3" Artista="coso3" Anno="2014" Genere="Pop"></Album>
+    <Album Titolo="cosa4" Artista="coso4" Anno="1982" Genere="Pop"></Album>
+</Catalogo>

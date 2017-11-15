@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalogo>
+    <Prodotto Name="cosa" Id="5128" Compagnia="Nonna papera" Descrizione="boh">
+        <Slideshow>
+            <Immagine Id="5128" Url="dajeForte.png"></Immagine>             
+            <Immagine Id="4532" Url="dajeForte1.png"></Immagine>
+            <Immagine Id="78956" Url="dajeForte2.png"></Immagine>
+        </Slideshow>
+    </Prodotto>  
+</Catalogo>
