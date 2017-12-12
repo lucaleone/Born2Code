@@ -1,0 +1,23 @@
+<form novalidate #SearchForm="ngForm" name="filter form">
+  <select class="NationSelect" name="selectNation" [(ngModel)]="selectedNation"
+          [value]="selectedNation">
+    <option value=""></option>
+    <option value="Francia">Francia (FR)</option>
+    <option value="Germania">Germania (DE)</option>
+    <option value="Spagna">Spagna (ES)</option>
+    <option value="Inghilterra">Inghilterra (GB)</option>
+    <option value="Svizzera">Svizzera (CH)</option>
+    <option value="Tutti">Tutti</option>
+  </select>
+  <div *ngIf="selectedNation !== '' ">
+    <h2 class="inline">{{selectedNation}}</h2>
+    <strong>Genere: </strong>
+    <label class="inline" for="MaleFilter">Maschio</label>
+    <input type="checkbox" id="MaleFilter" name="MaleFilter" [(ngModel)]="maleFilter">
+    <label class="inline" for="FemaleFilter">Femmina</label>
+    <input type="checkbox" id="FemaleFilter" name="FemaleFilter" [(ngModel)]="femaleFilter">
+    <label><strong>Risultati</strong>
+      <input type="number" [(ngModel)]="maxResultNum"></label>
+    <input type="button" value="Cerca" (click)="ApplyFilter()">
+  </div>
+</form>
