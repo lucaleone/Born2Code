@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gioca a tris!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" 
+          rel="stylesheet">
+    <link href="trisStyle.css" rel="stylesheet"/>
+   
+    
+</head>
+<body>
+    <header>
+        <h1>Tris</h1>
+    </header>
+	<div class="trisTable">
+        <div id="row1cel1" onclick="mossa.eseguiMossa(0, 0);"></div>
+        <div id="row1cel2" onclick="mossa.eseguiMossa(0, 1);"></div>
+        <div id="row1cel3" onclick="mossa.eseguiMossa(0, 2);"></div>
+
+        <div id="row2cel1" onclick="mossa.eseguiMossa(1, 0);"></div>
+        <div id="row2cel2" onclick="mossa.eseguiMossa(1, 1);"></div>
+        <div id="row2cel3" onclick="mossa.eseguiMossa(1, 2);"></div>
+        
+        <div id="row3cel1" onclick="mossa.eseguiMossa(2, 0);"></div>
+        <div id="row3cel2" onclick="mossa.eseguiMossa(2, 1);"></div>
+        <div id="row3cel3" onclick="mossa.eseguiMossa(2, 2);"></div>
+    </div>
+    <p id="trisCaptation">Turno del giocatore 1</p>
+    <footer class="footer">@ Luca Leone 2017</footer>
+</body>
+<script src="tris2.js"></script>
+</html>

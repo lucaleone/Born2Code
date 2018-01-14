@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="BasicCSS.css">
+    <!-- <meta http-equiv="refresh" content="4" > -->
+</head>
+<body>
+    <header>
+      <div id="myPronotazioni_btn" class="headerButton PrenotazioniButton">
+
+      </div>
+      <div id="home_btn" class="headerButton flexGrow textCentered">
+        <strong>Home</strong> <span id="NomeUtente2"></span>
+      </div>
+      <div class="headerButton CoinsButton">
+        <span id="CoinsNumber" class="textCentered textBold">10</span>
+      </div>
+    </header>
+    <main>
+      <div id="LoginModule" class="layoutPadding">
+        <label for="name"><h3>Nome: </h3></label>
+        <input testo type="text" name="name" id="loginName">
+        <label for="password"><h3>Password: </h3></label>
+        <input testo type="password" name="password" id="loginpassword">
+        <br>
+        <button id="login_btn">login</button>
+      </div>
+
+      <div id="HomeModule" class="layoutPadding">
+        <label for="selectedRoom"><h3>Selezione un'aula: </h3></label>
+        <select id="selectedRoom" name="selectedRoom">
+          <option value="">selezione un'aula...</option>
+          <option value="1">Small</option>
+          <option value="3">Large</option>
+          <option value="5">X-Large Room</option>
+          <option value="8">Chief Room</option>
+          <option value="10">Superior</option>
+        </select>
+        <br>
+        <button id="book_btn">Prenota</button>
+      </div>
+
+      <div id="PrenotazioniModule" class="layoutPadding">
+        <h3>Prenotazioni di <span id="NomeUtente"></span></h2>
+          <ul id="listaPrenotazioni">
+          </ul>
+      </div>
+
+    </main>
+<script src="Prenotazione.js"></script>
+</body>
+</html>
